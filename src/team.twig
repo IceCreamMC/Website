@@ -2,6 +2,23 @@
 {% set title = 'IceCream - Team' %}
 {% set url = 'https://icecreammc.xyz/team' %}
 {% set description = 'Giving credit to the people that make IceCreamMC!' %}
+
 {% block content %}
-	<main>
-	
+    <section class="team">
+        <h1>Meet the IceCreamMC Team</h1>
+        <p>Giving credit to the people that make IceCreamMC!</p>
+        
+        <div class="team-members">
+            {% for member in staff %}
+                <div class="team-member">
+                    <img src="{{ member.avatar }}" alt="{{ member.name }}'s avatar" class="team-avatar">
+                    <h2>{{ member.name }}</h2>
+                    <p>{{ member.role }}</p>
+                    <p>{{ member.bio }}</p>
+                </div>
+            {% else %}
+                <p>No team members found. Please check back later!</p>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
