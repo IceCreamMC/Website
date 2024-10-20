@@ -1,1 +1,14 @@
-
+[
+    {
+        "name": "Pancakes",
+        "role": "Owner",
+        "avatar": "https://icecreammc.xyz/images/pancakes-avatar.png",
+        "bio": "Founder of IceCreamMC and passionate about creating a friendly community."
+    },
+    {
+        "name": "Freeze",
+        "role": "Project Lead",
+        "avatar": "https://icecreammc.xyz/images/freeze-avatar.png",
+        "bio": "Leading the development of IceCreamMC with a love for code and Minecraft."
+    }
+]
