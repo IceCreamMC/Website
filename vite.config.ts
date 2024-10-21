@@ -42,6 +42,7 @@ export default defineConfig({
             input: {
                 main: "./index.html",
                 downloads: "./downloads.html",
+                team: "./team.html",
                 //example1: "./example1.html",
                 //example2: "./example2/index.html",
                 // ...

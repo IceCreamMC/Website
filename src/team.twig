@@ -1,0 +1,40 @@
+{% extends 'partials/layout.twig' %}
+
+{% set title = 'IceCream - Team Members' %}
+
+{% block content %}
+<main>
+
+<header class="hero">
+  <article>
+
+    <h1>Our Team</h1>
+  </article>
+</header>
+
+<div class="container">
+  <h2>Meet the IceCream Devs!</h2>
+  <ul class="team-members">
+    {% for member in team_members %}
+      <li>
+        <img src="{{ member.avatar_url }}" alt="{{ member.name }}'s Profile Picture">
+        <h3>{{ member.name }}</h3>
+        <p>{{ member.title }} - {{ member.description }}</p>
+        {% if member.github %}
+          <a href="{{ member.github }}">GitHub Profile</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+
+    <li>
+      <img src="https://avatars.githubusercontent.com/u/84547061" alt="Pancake's Profile Picture">
+      <h3>Pancakse</h3>
+      <p>Project Lead - The mastermind behind IceCreamMC.</p>
+      <a href="https://github.com/Pan-cakse">GitHub Profile</a>
+    </li>
+  </ul>
+</div>
+
+</main>
+
+{% endblock %}
