@@ -8,4 +8,4 @@
 
 ## Starting
 
-1. npm run preview
+1. npm run preview 
